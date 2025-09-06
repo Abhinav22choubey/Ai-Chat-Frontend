@@ -2,8 +2,11 @@
   "name": "database",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "dev": "parcel index.html",
+  "build": "parcel build index.html",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -36,6 +39,7 @@
     "crypto-browserify": "^3.12.1",
     "events": "^3.3.0",
     "os-browserify": "^0.3.0",
+    "parcel": "^2.15.4",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "querystring-es3": "^0.2.1",
