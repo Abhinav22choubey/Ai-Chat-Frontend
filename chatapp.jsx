@@ -15,7 +15,7 @@ const Chatapp = () => {
     setMessages((prev) => [...prev, { sender: "user", text: input }]);
     try {
       setLoad(true);
-      const res = await fetch("http://localhost:3000/chat", {
+      const res = await fetch("https://ai-chat-backend-beryl.vercel.app/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ _id: uniqueId, msg: input }),
